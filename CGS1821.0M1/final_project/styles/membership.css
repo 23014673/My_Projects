@@ -1,0 +1,259 @@
+/*
+Author: Hannah Bauer
+Course: CGS1821.0M1
+Date: 04/30/2023
+Assignment: Final Project | Membership Page
+*/
+
+/* the styles for the elements */
+html {
+	background-color: white;
+}
+body {
+	font-family: "Times New Roman", Times, serif;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #E3DEED;
+    border: 3px solid #000000; 
+}
+/* the styles for the header */
+header {
+    background-image: linear-gradient(to bottom, #E0D6F5 0%, #A39CC9 100%);
+    text-align: center;
+    padding: 15px 30px;  
+    height: 70px;
+    border: 1.5px solid #000000; 
+    border-bottom: 3px solid #000000; 
+} 
+header img {
+    float: right;
+    width: 15.5555%;
+    max-width: 70px;
+    min-width: 50px;
+    border: 2px solid #2B194D;
+}
+header .rotate {
+    animation: rotation 8s normal linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+header h2 {
+	font-size: 200%;
+	color: #000000;
+	text-indent: 5%;
+    text-align: center;
+    margin-bottom: .3em;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	clear: left;
+    border-bottom: 2px solid #E3DEED;
+}
+#nav_menu ul {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 25%;
+}
+#nav_menu ul li a{
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #A39CC9;
+    font-weight: bold;
+    font-size: 17px;
+    border: 1.5px solid #000000;
+    color: #000000;
+}
+#nav_menu a.current {
+    color: #4105b8;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+}
+
+/* the styles for the main content */
+main {
+    font-size: 100%; 
+}
+
+/* the styles for the section */
+section {
+    float: right;
+    width: 27.2222%;
+    padding: 1.5625em 3.3333%; 
+}
+section #info {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 140%;
+}
+section img{
+    float: center;
+	max-width: 85%;
+	min-width: 200px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+    float: left;
+    width: 62.777%;
+    padding: 1.5625em 0 0 3.3333%; 
+}
+aside h1 {
+    font-size: 160%;
+    margin-bottom: .3em;
+}
+aside h2 {
+    font-size: 85%;
+    margin-bottom: .3em;
+}
+aside fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+}
+aside legend {
+    font-weight: bold;
+}
+aside label {
+    float: left;
+    font-size: 95%;
+    text-align: right;
+    width: 12em;
+}
+aside input,select {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+aside input:required {
+    border: 4px #ff0000;
+}
+aside input:valid {
+    border: 1px solid #000000;
+}
+aside input:invalid {
+    border: 1px solid #ff0000;
+}
+aside br {
+    clear: both;
+}
+aside textarea {
+    height: 5em;
+    width: 40em;
+}
+#radio_buttons input {
+    width: 5em;
+}
+#radio_buttons {
+    font-size: 105%;
+}
+#checkbox_buttons input {
+    width: 5em;
+}
+#buttons input {
+    width: 15em;
+}
+aside p {
+    font-size: 105%;
+    margin-bottom: .7em;
+}
+
+/* the styles for the footer */
+footer { 
+	clear: both;
+    padding: .9375em 3.3333%;  
+    background-image: linear-gradient(to bottom, #E0D6F5 0%, #A39CC9 100%);
+    border: 1.5px solid #000000; 
+    border-top: 3px solid #000000; 
+} 
+footer p {
+	text-align: right;
+    font-size: 100%;
+    color: #000000; 
+}
+#mobile_menu {
+	display: none;
+}
+@media only screen and (max-width: 900px) {
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+    .slicknav_menu {
+        background: #A39CC9 !important;
+	    padding: 3px !important;
+    }
+    #mobile_menu {
+		display: block;
+	}
+    #mobile_menu ul {
+        background-color: #A39CC9;
+    }
+    #mobile_menu a {
+        background-color: #A39CC9;
+    }
+    #mobile_menu a:hover, #mobile_menu a:focus {
+        color: #E0D6F5;
+    }
+	header h2 {
+		font-size: 200%;
+	}
+	section {
+		float: none;
+        width: 93.3334%;
+	}
+	aside {
+		float: none;        
+		width: 93.3334%;
+        padding-top: 0;
+        padding-bottom: 1.5625em;
+	}
+    aside textarea {
+        width: 93.3334%;
+    }
+}
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+    section p {
+	    font-size: 95%;
+    }
+}
