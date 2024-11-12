@@ -1,0 +1,64 @@
+/*
+AUTHOR: Hannah Bauer
+COURSE: COP2822.0M1
+DATE: 1/26/2024
+ASSIGNMENT: Exercise 3.1 - Enhance the Future Value Application
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Future Value Application</title>
+    <script>
+        var userFutureValue, isValidInvestmentInput, isValidRateInput, repeat;
+
+        do {
+                        // GET USER ENTERIES FOR INVESTMENT AMOUUNT
+            do {
+                var investment = prompt("Enter investment amount as xxxxx.xx", 10000);
+                isValidInvestmentInput = !isNaN(parseFloat(investment));
+                if (!isValidInvestmentInput) {
+                    alert("Please enter a valid number!");
+                }
+            } while (!isValidInvestmentInput);
+
+                        // CALCULATE INTEREST RATE BETWEEN 0 - 15
+            do {
+                var rate = prompt("Enter interest rate as xx.x", 7.5);
+                rate = parseFloat(rate);
+                isValidRateInput = !isNaN(rate) && rate >= 0 && rate <= 15;
+                if (!isValidRateInput) {
+                    alert("Please enter a valid number between 0 and 15 for the interest rate.");
+                }
+            } while (!isValidRateInput);
+
+                        // GET USER ENTRY FOR NUMBER OF YEARS
+            var years = prompt("Please enter number of 'YEARS': ", 10);
+            years = parseInt(years);
+
+                        // CALCULATE FUTURE VALUE FROM USER ENTRY
+            userFutureValue = investment;
+            for (var i = 1; i <= years; i++) {
+                userFutureValue = userFutureValue + (userFutureValue * rate / 100);
+            }
+            userFutureValue = parseInt(userFutureValue);
+
+                        // ASK USER IF THEY WANT TO REPEAT PROGRAM
+            repeat = prompt("Would you like to start over? Enter 'YES' to repeat the program.").toLowerCase();
+
+        } while (repeat === 'YES');
+    </script>
+</head>
+<body>
+    <main>
+        <script>
+            document.write(" Investment Amount: " + investment);
+            document.write(" Interest Rate: " + rate);
+            document.write(" Years: " + years);
+            document.write(" Future Value: " + userFutureValue);
+        </script>
+            Thanks for using the Future Value application.
+    </main>
+</body>
+</html>

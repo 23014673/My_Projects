@@ -1,0 +1,28 @@
+/*
+    AUTHOR: Hannah Bauer 
+    COURSE: COP2822.0M1
+    DATE: 4/08/2024
+    ASSIGNMENT: Exercise 13.2 - Enhance The Slide Show Application
+*/
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 550px;
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 1em;
+    text-align: center;
+}
+h1 {
+	color: blue;
+	margin: .5em 0 0;
+	padding: 0;
+	text-align: center;
+}
+p {
+	margin: 0;
+	padding: .5em;
+    text-align: center;	
+}

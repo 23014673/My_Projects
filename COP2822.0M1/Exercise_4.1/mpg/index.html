@@ -1,0 +1,81 @@
+<!-- 
+    AUTHOR: Hannah Bauer 
+    COURSE: COP2822.0M1
+    DATE: 2/2/2024
+    ASSIGNMENT: Exercise 4.1 - Enhance the MPG application 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <title>Calculate MPG</title>
+    <link rel="stylesheet" href="mpg.css">
+    <script>
+        "use strict";
+        var $ = function(id) {
+            return document.getElementById(id);
+        };
+
+        function calculateMpg(miles, gallons) {
+            var mpg = (miles / gallons);
+            mpg = mpg.toFixed(1);
+            return mpg;
+        };
+
+        var processEntries = function() {
+            var miles = parseFloat($("miles").value);
+            var gallons = parseFloat($("gallons").value);
+            var milesSpan = $("error-miles");
+            var gallonsSpan = $("error-gallons");
+
+            if (isNaN(miles)) {                     // CONDITIONS FOR: MILES
+                alert("Miles must be numeric");
+            } else if (miles <= 0) {
+                alert("Miles must be greater than zero");
+            
+            } else if (isNaN(gallons)) {            // CONDITIONS FOR: GALLONS
+                alert("Gallons must be numeric");
+            } else if (gallons <= 0) {
+                alert("Gallons must be greater than zero");
+            
+            } else {
+                $("mpg").value = calculateMpg(miles, gallons);
+            }
+        };
+
+        var clearEntries = function() {             // CLEARING ENTERIES FROM USER
+            $("miles").value = "";
+            $("gallons").value = "";
+            $("mpg").value = "";
+            $("error-miles").textContent = "*";
+            $("error-gallons").textContent = "*";
+        };
+
+        window.onload = function() {                    // CALCULATING ENTERIES FROM USER
+            $("calculate").onclick = processEntries;        
+            $("clear-enteries").onclick = clearEntries;
+            $("miles").ondblclick = clearEntries;
+            $("miles").focus();
+        };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Calculate Miles Per Gallon</h1>
+        <label for="miles">Miles Driven:</label>
+        <input type="text" id="miles">
+        <span>*</span><br>
+        <label for="gallons">Gallons of Gas Used:</label>
+        <input type="text" id="gallons">
+        <span>*</span><br>
+        <label for="mpgx">Miles Per Gallon</label>
+        <input type="text" id="mpg" disabled><br>
+        <label>&nbsp;</label>
+        <input type="button" id="calculate" value="Calculate MPG"><br>
+        <span></span><br>
+        <label for="clear-enteries">Clear Entries</label>
+        <input type="button" id="clear-enteries" value="Clear Entries"><br>
+    </main>
+</body>
+</html>
