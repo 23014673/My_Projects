@@ -1,0 +1,125 @@
+/* the styles for the elements */
+html {
+	background-color: white;
+}
+body {
+	font-family: "Times New Roman", Times, serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #E3DEED;
+    border: 3px solid #000000; 
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	display: flex;
+	flex-basis: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a{
+    float: center;
+    text-align: center;
+    display: block;
+    width: 397px;
+    padding: 1em 0;
+    background-color: #A39CC9;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1.5px solid #000000;
+    color: #330099;
+}
+#nav_menu li a.lastitem {
+    border-right: none;
+}
+#nav_menu ul li a.current {
+    color: #000000;
+}
+/* the styles for the header */
+header {
+    background-image: linear-gradient(to bottom, #E0D6F5 0%, #A39CC9 100%);
+    text-align: center;
+    padding: 15px 30px;  
+    height: 70px;
+    border: 1.5px solid #000000; 
+    border-bottom: 3px solid #000000; 
+} 
+header img {
+    float: right;
+    width: 15.5555%;
+    max-width: 70px;
+    min-width: 50px;
+    border: 2px solid #2B194D;
+}
+header h2 {
+	font-size: 200%;
+	color: #000000;
+	text-indent: 5%;
+    text-align: center;
+    margin-bottom: .3em;
+}
+/* the styles for the main content */
+main {
+    font-size: 100%; 
+}
+
+/* the styles for the section */
+section {
+    float: right;
+    width: 27.2222%;
+    padding: 1.5625em 3.3333%; 
+}
+section img{
+    border: 1px solid #000000;
+    position: center;
+}
+/* the styles for the left sidebar */
+aside {
+    float: left;
+    width: 62.777%;
+    padding: 1.5625em 0 0 3.3333%; 
+    
+}
+aside h1 {
+	font-size: 100%;    
+    margin-bottom: 8px;
+}
+aside ul {
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 3em;
+}
+aside a:link, aside a:visited { 
+    color: #914DB2
+}
+aside a:hover, aside a:focus {
+    color: #6633CC;
+}
+/* the styles for the figure image in the left sidebar */
+aside figure {
+    float: center;
+}
+aside figcaption {
+    text-align: center;
+    padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/* the styles for the footer */
+footer { 
+	clear: both;
+    padding: .9375em 3.3333%;  
+    background-image: linear-gradient(to bottom, #E0D6F5 0%, #A39CC9 100%);
+    border: 1.5px solid #000000; 
+    border-top: 3px solid #000000; 
+} 
+footer p {
+	text-align: right;
+    font-size: 100%;
+    color: #000000; 
+}

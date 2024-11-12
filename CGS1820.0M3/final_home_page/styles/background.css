@@ -1,0 +1,124 @@
+/* the styles for the elements */
+html {
+	background-color: white;
+}
+body {
+	font-family: "Times New Roman", Times, serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #E3DEED;
+    border: 3px solid #000000; 
+}
+/* the styles for the header */
+header {
+    background-image: linear-gradient(to bottom, #E0D6F5 0%, #A39CC9 100%);
+    padding: 15px 30px; 
+    height: 70px;
+    border: 1.5px solid #000000; 
+    border-bottom: 3px solid #000000; 
+} 
+header img {
+    float: right;
+    border: 2px solid #2B194D;
+}
+header h2 {
+	font-size: 200%;
+	color: #000000;
+	text-indent: 45px;
+    text-align: center;
+    margin-bottom: .3em;
+}
+/* the styles for the navigation menu */
+#nav_menu {
+	clear: left;
+    border-bottom: 2px solid #E3DEED;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 33.33%;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a{
+    float: center;
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    background-color: #A39CC9;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1.5px solid #000000;
+    color: #330099;
+}
+#nav_menu ul li a.current {
+	color: #000000;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: #E3DEED;
+}
+#nav_menu ul li:hover ul {
+	width: 100%;
+}
+/* the styles for the main content */
+main {
+    font-size: 100%; 
+}
+main h1 {
+    border: 1.5px solid #000000;
+    background-color: #A39CC9; 
+    text-align: center;
+    font-size: 15pt;
+    padding: 10px 15px; 
+
+}
+section {
+    width: 500px;
+    float: left;
+    padding: 25px 30px 0;
+}
+section img{
+    border: 1px solid #000000;
+    position: center;
+}
+aside {
+    float: right;
+    width: 600px;
+    padding: 25px 0 0 30px;
+}
+/* the styles for the footer */
+footer { 
+	clear: both;
+	padding: 15px 30px;
+    height: 30px;
+    background-image: linear-gradient(to bottom, #E0D6F5 0%, #A39CC9 100%);
+    border: 1.5px solid #000000; 
+    border-top: 3px solid #000000; 
+} 
+footer p {
+	text-align: right;
+    font-size: 100%;
+    color: #000000; 
+}
