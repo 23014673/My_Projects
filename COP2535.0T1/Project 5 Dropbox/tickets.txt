@@ -1,0 +1,66 @@
+101 NetworkIssue open 1
+Network latency affecting all users
+New York Office
+
+102 HardwareFailure in_progress 
+Printer malfunction in main office
+Los Angeles Office
+
+103 SoftwareUpdate closed 3
+Scheduled software update completed
+
+104 MissingFields high_priority 
+Office not specified
+Chicago Office
+
+105 LoginIssue open 2
+Repeated login failures across accounts
+San Francisco Office
+
+InvalidID NoPriority closed
+This ticket entry has an invalid format
+Boston Office
+
+106 ConnectivityIssue closed 2
+Network down in several regions
+No location
+
+107 PasswordReset in_progress 3
+User unable to reset password due to email issues
+Austin Office
+
+108 AccountCompromise open 1
+Compromised account detected; urgent review required
+Miami Office
+
+109 PrinterJam completed 2
+Printer jam resolved; maintenance check complete
+New York Office
+
+DuplicateID NetworkLatency open 1
+Duplicate ticket ID should not be allowed
+Los Angeles Office
+
+110 SlowInternet open 1
+Internet speed issues in the office
+Houston Office
+
+InvalidPriority DataLoss high -1
+Important files are missing from storage
+Chicago Office
+
+111 UnauthorizedAccess open 2
+Attempted unauthorized access logged
+San Francisco Office
+
+112 SystemUpdate scheduled 3
+System update scheduled for next weekend
+Remote
+
+113 LostDevice closed 
+Employee lost device; reported for tracking
+New York Office
+
+114 WifiIssue in_progress 4
+Frequent disconnections reported by users
+Dallas Office
