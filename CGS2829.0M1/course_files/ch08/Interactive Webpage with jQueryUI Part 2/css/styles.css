@@ -1,0 +1,109 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/10/2024
+Assignment: Exercise 8: Interactive Webpage with jQuery UI Part 2
+*/
+
+body {
+    background: #f7f7f7;
+    font-family: 'Tahoma', sans-serif; 
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.combined-sections {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #e6e9f1;
+    border: 2px solid #8b9dc3;
+    border-radius: 8px;
+}
+
+.jQueryControls-section {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #8b9dc3;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+#slider {
+    width: 100%;
+}
+
+
+#slider-value {
+    font-weight: bolder;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 25px auto;
+    width: 100%;
+}
+
+table td, th {
+    height: 45px;
+}
+
+.widgets {
+    width: 100%;
+}
+
+.exit {
+    width: 90px;
+    margin-left: 40px;
+    text-align: right;
+}
+
+#progressbar {
+    width: 100%;
+}
+
+#plus-button, #minus-button {
+    width: 25px;
+    height: 25px;
+}
+
+#datepicker + img {
+    margin-left: 10px;
+}
+
+.folkMusic-accordion-section {
+    width: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #8b9dc3;
+}
+
+#folkMusic {
+    margin: 25px auto;
+}
+
+#folkMusic h3 {
+    color: #3b5998;
+}
+
+.instruments-thumbnails {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.instruments-image {
+    float: left;
+    margin: 10px;
+}

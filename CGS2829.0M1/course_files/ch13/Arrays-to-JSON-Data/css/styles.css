@@ -1,0 +1,53 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 11/13/2024
+Assignment: Exercise 13: Arrays to JSON Data
+*/
+
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #B2A4A4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 3px solid #212121;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #212121;
+  border-radius: 10px;
+  background-color: #E2D8D7;
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #E2D8D7;
+  border: 0.5px solid #212121;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.output {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  border: 0.5px solid #212121;
+  border-radius: 10px;
+  max-width: 80%;
+  overflow: auto;
+  line-height: 1.5;
+}

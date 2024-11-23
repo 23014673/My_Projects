@@ -1,0 +1,10 @@
+{
+    "backgrounds": [
+        {"color": "#3498db"},
+        {"color": "#e74c3c"},
+        {"color": "#f39c12"},
+        {"color": "#2ecc71"},
+        {"color": "#9b59b6"}
+    ],
+    "animationInterval": 3000
+}

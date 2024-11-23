@@ -1,0 +1,86 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/30/2024
+Assignment: Exercise 11: Cookies for E-commerce
+*/
+
+main {
+	max-width: 940px;
+	min-width: 720px;
+	margin: 30px auto;
+}
+
+h1 {
+	font-family: Ravie;
+	font-size: 3vw;
+	margin: 10px auto;
+	text-align: center;
+	color: green;
+}
+
+h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+h3 {
+    font-size: 1em;
+    margin-top: 20px;
+    color: #444;
+    font-weight: bold;
+    text-align: left;
+}
+
+header p {
+	text-align: center;
+	font-size: .7em;
+	color: #888;
+}
+
+header {
+	margin-top: 30px;
+	background: #fc0;
+	border: 3px solid green;
+	border-radius: 8px;
+}
+
+#pixlayer{
+	float: left;
+	width: 450px;
+	text-align: center;
+
+}
+
+#data {
+	float: left;
+	width: calc(100% - 450px);
+	min-width: 200px;
+
+}
+
+button {
+	display: block;
+	margin: 30px auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.selects {
+	display: flex;
+	justify-content: space-around;
+}
+
+.textbox {
+	width: 75px;
+	padding: 3px;
+}
+
+.boxrow {
+	margin-top: 40px;
+}
+
+.right {
+	text-align: right;
+}

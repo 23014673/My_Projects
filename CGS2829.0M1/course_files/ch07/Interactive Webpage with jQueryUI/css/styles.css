@@ -1,0 +1,80 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/3/2024
+Assignment: Exercise 7: Interactive Webpage with jQuery UI
+*/
+
+body {
+    background-color: #cfd2d8;
+    font-family: 'Tahoma', sans-serif; 
+    margin: 0 auto;
+    width: 1200px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: gill sans, sans-serif; 
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#tabs {
+    background-color: #f7f7f7;
+}
+
+p {
+    font-family: Trebuchet MS, sans-serif; 
+}
+
+.ui-dialog {
+    padding: 15px;
+    padding-left: 45px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-active a {
+    font-weight: bold;
+    color: #332e2a;
+    background-color: #788194;
+}
+
+.ui-tabs .ui-tabs-nav a:hover {
+    background-color: #9fa9beaf;
+}
+
+.flexbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 0.95;
+}
+
+#topic1 .image-content, .image-content2, #topic2 .image-content, #topic3 .image-content, .image-content2 {
+    display: flex;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+button {
+    padding: 10px 18px;
+    border-radius: 5px;
+    background-color: #788194;
+    color: #332e2a;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #9fa9beaf;
+}

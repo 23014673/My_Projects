@@ -1,0 +1,52 @@
+<!-- Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 9/11/2024
+Assignment: Exercise 4: Five Buttons - Accessing the DOM
+-->
+
+<!DOCTYPE html>
+    <html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Five Buttons | Accessing the DOM</title>
+        <link rel="shortcut icon" href="images/question_mark_icon.png">
+            <link href="css/styles.css" rel="stylesheet">
+        </head>
+
+    <body>
+        <main>
+            <h1>Accessing the DOM</h1>
+            <aside style="background-image: url('images/inspect.png'); background-size: 23%; background-position: 78% 0; background-repeat: no-repeat; margin-left: -175px">
+                <p><input type="text" id="one" placeholder="Enter a number" autofocus></p>
+                <p><input type="text" id="two" placeholder="Enter a number"></p>
+                <p><input type="text" id="three" placeholder="Enter a number"></p>
+                <p><input type="text" id="four" placeholder="Enter a number"></p>
+                <p><input type="text" id="five" placeholder="Enter a number"></p>
+                <p><input type="text" id="six" placeholder="Enter a number"></p>
+            </aside>
+            <article>
+                <section>
+                    <button type="button" id="sum_button">Sum</button>
+                    <p id="sum_output"></p>
+                </section>
+                <section>
+                    <button type="button" id="count_button">Count</button>
+                    <p id="count_output"></p>
+                </section>
+                <section>
+                    <button type="button" id="average_button">Average</button>
+                    <p id="average_output"></p>
+                </section>
+                <section>
+                    <button type="button" id="minimum_button">Minimum</button>
+                    <p id="minimum_output"></p>
+                </section>
+                <section>
+                    <button type="button" id="maximum_button">Maximum</button>
+                    <p id="maximum_output"></p>
+                </section>
+            </article>
+        </main>
+        <script src="js/scripts.js"></script>
+    </body>
+    </html>

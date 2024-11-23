@@ -1,0 +1,22 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/14/2024
+Assignment: Exercise 9: Using Widgets in a Form
+*/
+
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #f9f9f9;
+    justify-content: center;
+    padding: 300px;
+    align-items: center;
+}
+
+.container {
+    background-color: #fefdff;
+    box-shadow: 0px 4px 8px #ebeaeb;
+    border-radius: 5px;
+    border: 1px solid #e5e3e8;
+    text-align: center;
+    padding: 20px;
+}

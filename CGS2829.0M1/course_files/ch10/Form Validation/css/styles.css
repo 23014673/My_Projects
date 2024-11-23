@@ -1,0 +1,76 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/22/2024
+Assignment: Exercise 10: Form Validation
+*/
+
+/* FORM PAGE STYLING */
+
+body {
+    font-family: 'Tahoma', sans-serif; 
+    background-color: #8b9dc355;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    width: 600px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid #afbad398;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    width: 70%;
+    background-color: #7281a3;
+    margin-left: 95px;
+    color: white;
+    cursor: pointer;
+
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover {
+    background-color: #7281a3;
+}
+
+.error {
+    color: #3f4e70;
+    font-size: 15px;
+    font-style:italic;
+}
+
+/* RESULT PAGE STYLING */
+
+ul li{
+    font-weight: bold;
+}
+
+ul li span{
+    font-weight: lighter;
+    font-style:italic;
+}

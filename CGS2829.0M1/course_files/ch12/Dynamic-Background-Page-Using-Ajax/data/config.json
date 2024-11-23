@@ -1,0 +1,22 @@
+{
+  "background": {
+
+    "type": "gradient",
+    
+    "colors": ["#DCDCDC", "#B0B0B0", "#D3D3D3", "#828082", "#BEBEBE", "#D3D3D3", "#DCDCDC"],
+    
+    "direction": "45deg",
+    
+    "animationSpeed": "10s",
+    
+    "keyframes": [{ "position": "50%", "backgroundPosition": "70% 25%" },{ "position": "100%", "backgroundPosition": "50% 25%" } ],
+    
+    "themes": {
+      "greyscale": ["#808080", "#B0B0B0", "#D3D3D3", "#A9A9A9", "#BEBEBE", "#C0C0C0", "#DCDCDC"],
+
+      "day": ["#AD4A28", "#DD723C", "#FC7001", "#DCB697", "#9BA5AE", "#3E5879", "#020B1A"],
+      
+      "night": ["#F49090", "#459D73", "#27163D", "#818C99", "#3E5879", "#020B1A"]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 9/26/2024
+Assignment: Exercise 6: Getting Set Up - Two Communities in Florida
+*/
+
+body {
+    background-color: #dbd3ce;
+    margin: 0 auto;
+    width: 1200px auto;
+    border-radius: 10px;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 5px;
+}
+
+.section {
+    border: 2px solid #212121;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.aside {
+    border: 2px solid #212121;
+    padding: 10px;
+    width: 52%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Tahoma', sans-serif;          /* <h1> text has a unique font face */
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+h2 {
+    font-family: 'Didot', serif;                /* <h2> text has a unique font face */
+    font-size: 2em;
+}
+
+p {                                             /* default styling for p elements */
+    font-size: 1.4em;                           /* font size for all <p> elements to 1.4 ems */
+}
+
+.first-ten-elements {                           /* class for the first 10 <p> elements */
+    color: #496e7d;                           /* unique color for the first 10 paragraphs */
+}
+
+.second-ten-elements {                          /* class for the second 10 <p> elements */
+    color: #585e58;                           /* unique color for the second 10 paragraphs */
+}
+
+.every-third-element {                          /* style for every 3rd <p> element */
+    background-color: #cbbcb6;                /* background color for every third paragraph */
+}

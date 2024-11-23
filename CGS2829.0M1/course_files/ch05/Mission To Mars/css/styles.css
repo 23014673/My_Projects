@@ -1,0 +1,74 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 9/18/2024
+Assignment: Exercise 5: Timings with Image Animation - Mission to Mars
+*/
+
+html {
+	height: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #212121;
+    border-radius: 10px;
+    background-color: #fae5c0da;
+}
+
+body {
+    background: linear-gradient(to bottom, #4491cb, #f5e2c2);
+    font-family: Tahoma, sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+#count {
+    font-family: arial;
+    font-size: 5em;
+    text-align: center;
+}
+
+#timer-box {                              /* Styles for the timer box */
+    position: absolute;
+    background-color: #fae5c0c0;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    left: 12%;
+    top: 50%;
+    text-align: center;
+}
+
+#countdown button {                       /* Styles for the countdown button */
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#countdown {                              /* Styles for the countdown */
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#start {
+    display: block;
+    margin: 20px auto 0;
+}
+
+#rocket {
+    position: absolute;
+    bottom: -154px;
+    left: calc(50% - 106px);
+	z-index: 1;
+}
+
+#pad {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 150px);
+	z-index: 2;
+}
+
+#button {
+    margin: 2em;
+}

@@ -1,0 +1,97 @@
+<!-- Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/30/2024
+Assignment: Exercise 11: Cookies for E-commerce
+--> 
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buy Your Blind Pants Today!</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+	<body>
+		<main>
+			<header>
+				<h1>Crazy Steve's Clothing World</h1>
+				<p>and Cookie Catcher</p>
+			</header>
+
+			<section id="pixlayer">
+				<h2>Blind Pants!</h2>
+				<img src="images/pants.png" width="288" height="469" alt="ugly pants">
+				<p>Blind Pants: for the color blind and the taste blind!</p>
+			</section>
+			
+            <section id="data">
+				<h2>Your Particulars:</h2>
+				<p class="selects"><label for="size" class="hidden">Your Size:</label>
+				<select name="size" id="size" autofocus  tabindex="1">
+					<option value="" selected="selected">Size</option>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+					<option value="xlarge">XL</option>
+					<option value="xxlarge">XXL</option>
+				</select>
+
+				<label for="gender" class="hidden">Gender:</label>
+				<select name="gender" id="gender" tabindex="2">
+					<option value="">Gender</option>
+					<option value="girls">Girls</option>
+					<option value="boys">Boys</option>
+					<option value="women">Women</option>
+					<option value="men">Men</option>
+					<option value="unisex">Unisex</option>
+				</select>
+
+				<label for="color" class="hidden">Color:</label>
+				<select name="color" id="color" tabindex="3">
+					<option value="">Color</option>
+					<option value="blue">Blue</option>
+					<option value="purple">Purple</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="aqua">Aqua</option>
+					<option value="mauve">Mauve</option>
+				</select></p>
+
+				<p class="selects boxrow">
+					<label for="age" class="hidden">Your age:</label>
+					<input type="text"  id="age" class="textbox" placeholder="Age" tabindex="4">
+					
+                    <label for="height" class="hidden">Your Height:</label>
+					<input type="text" id="height" class="textbox" placeholder="Height (in)" tabindex="5">
+					
+                    <label for="weight" class="hidden">Your Weight:</label>
+					<input type="text" id="weight" class="textbox" placeholder="Weight (lbs)" tabindex="6">
+				</p>
+
+				<p class="selects boxrow">
+				  <label for="prodid" class="hidden">Quantity:</label>
+					<input type="text" class="textbox" id="prodid" value="78154-5629" readonly="readonly">
+					
+                    <label for="qty" class="hidden">Your Height:</label>
+				  <input type="text"  id="qty" class="textbox right" placeholder="Qty Ordered" tabindex="7">
+					
+                  <label for="price" class="hidden">Your Weight:</label>
+				  <input type="text"  id="price" class="textbox right" value="39.95" readonly="readonly">
+					
+                  <label for="extprice" class="hidden">Ext. Price:</label>
+				  <input type="text"  id="extprice" class="textbox right" readonly="readonly">
+				</p>
+
+				<button type="button" id="order" tabindex="8">Place Order</button>
+                
+                <button type="button" id="reset" tabindex="9">Reset</button>
+
+			</section>
+
+		</main>
+
+		<script src="js/scripts.js"></script>
+
+    </body>
+</html>

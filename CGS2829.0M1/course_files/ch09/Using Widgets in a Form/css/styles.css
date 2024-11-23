@@ -1,0 +1,98 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 10/14/2024
+Assignment: Exercise 9: Using Widgets in a Form
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px 30px 20px 30px;
+    border: 3px solid #eca146;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #3884d0;
+}
+
+#tabs {
+    min-height: 15em;
+    margin-bottom: 2em;
+}
+
+.ui-tabs-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ui-tabs-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+span {
+    font-size: 15px;
+    color: #3884d0;
+}
+
+legend {
+    color: #3884d0;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+label {
+    float: left;
+    width: 100px;
+}
+
+input, select {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input {
+    width: 14em;    
+}
+
+input.left {
+    width: 1em;
+    padding-left: 0;
+}
+
+fieldset {
+    border: none;
+    margin-left: 0;
+    margin-top: 1em;
+    padding: 0;
+}
+
+fieldset div {
+    text-align: center;
+}
+
+#adults, #children {
+    width: 35px;
+}
+
+#smoking {
+    width: 1em;
+    margin-left: 0;
+}
+
+#policies, #submit {
+    display: inline-block;
+    width: 15em;
+}
+
+#dialog p {
+    font-size: 85%;
+}

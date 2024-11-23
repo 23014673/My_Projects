@@ -1,0 +1,34 @@
+<!--
+Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 8/23/2024
+Assignment: Exercise 1: Fahrenheit to Celsius Converter
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit to Celsius Converter</title>
+    <link rel="stylesheet" href="temperature_calculator.css">
+</head>
+<body>
+    <script>
+        // Prompt the user to enter the Fahrenheit temperature and parse it as a float
+        let fahrenheitTemperature = parseFloat(prompt("Enter Fahrenheit Temperature:"));
+
+        // Center the title in the prompt window
+        document.write('<h1 style="text-align: center"> Convert from Fahrenheit to Celsius </h1>');
+
+        // Convert Fahrenheit to Celsius, subtract 32 from the Fahrenheit temperature and multiply that result by 5/9.
+        let celsiusTemperature = (fahrenheitTemperature - 32) * 5/9;
+
+        // Display all temperatures using tenths of a degree + Center the calculation in the prompt window
+        document.write('<h2 style="text-align: center;">');
+        document.write("<p>" + fahrenheitTemperature.toFixed(1) + " °F =    " + celsiusTemperature.toFixed(1) + "   °C </p>");
+        document.write('</h2>');
+    </script>
+</body>
+</html>

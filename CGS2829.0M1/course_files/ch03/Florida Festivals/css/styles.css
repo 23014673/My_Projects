@@ -1,0 +1,93 @@
+/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 9/7/2024
+Assignment: Exercise 3: Florida Festivals Website
+*/
+
+body {
+    font-family: Garamond, serif;
+    background-color: #dfe0eb;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+	max-width: 1200px;
+	margin: 10px auto;
+	overflow: auto;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+    background-color: #E3E4E8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto 30px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #e1e1eb;
+}
+
+section {
+	margin-top: 10px;
+    float: left;
+	margin-top: 10px;
+
+}
+
+aside {
+	width: 596px;
+	float: right;
+    text-align: center;
+}
+
+#festivals-list {
+    width: 45%;
+}
+
+#festival, #url {
+    margin-top: 15px;
+    padding-left: 200px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+fieldset {
+    display: inline-block;
+    width: 100%;
+    background: #dfe0eb;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+} 
+
+p {
+    text-align: left;
+    padding-left: 30px;
+    margin: 10px 0;
+}
+
+#image img {
+    max-width: 75%;
+}
+
+#image-section {
+    width: 48%;
+    text-align: center;
+}
+
+#defaultLogo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

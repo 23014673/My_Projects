@@ -1,0 +1,61 @@
+﻿/* Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 9/11/2024
+Assignment: Exercise 4: Five Buttons - Accessing the DOM
+*/
+
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #B2A4A4;
+        margin: 0 auto;
+        width: 650px;
+        border: 3px solid #212121;
+        border-radius: 10px;
+    }
+    main {
+        margin: 0 auto;
+        width: 550px;
+    }
+    h1 {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #212121;
+        border-radius: 10px;
+        background-color: #E2D8D7;
+    }
+    input {
+        width: 100px;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    p {
+        text-align: center;
+        margin: .5em;
+    }
+    p ::placeholder {
+        color: #212121;
+    }
+    article {
+        display: flex;
+        justify-content: center;
+    }
+    section {
+        margin-top: 1em;
+        width: 100px;
+        padding: 10px;
+    }
+    section p {
+        color: #F0F1F5;
+    }
+    aside input {
+        background-color: #F0F1F5;
+    }
+    button {
+        font-size: 0.9rem;
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-color: #F0F1F5;
+    }
